@@ -555,7 +555,7 @@ export function get_item_trait(item, actor) {
  * @param {Array} actor.items
  * @param {string} trait_name
  */
-function trait_from_string(actor, trait_name) {
+export function trait_from_string(actor, trait_name) {
   let skill = actor.items.find((skill) => {
     return (
       skill.name.toLowerCase().replace("★ ", "") ===
